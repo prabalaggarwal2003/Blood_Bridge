@@ -1,0 +1,525 @@
+body{
+    margin: 0;
+   
+}
+a{
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+li{
+    text-decoration:none ;
+    display: inline;
+    font-size: 30px;
+}
+.cons{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.h3{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: #ee6f34;
+
+}
+.fg{
+    background-color: #ee6f34;
+    border-radius: 21px;
+    height: 59px;
+    border: 0px;
+    box-shadow: 35px;
+    width: 229px;
+    box-shadow:2px 2px 10px 6px rgb(0, 0,0,0.2);
+}
+.bgimg{
+background-image: url(https://static.vecteezy.com/system/resources/previews/013/835/372/large_2x/blood-donation-concept-human-holding-blood-sign-with-heart-rate-beat-free-photo.jpg);
+
+background-position-x: center;
+background-position-y: center;
+background-size: cover;
+height: 740px;
+}
+.list{
+    
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+/* position: -webkit;-sticky;
+
+    position: sticky */
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(103, 4, 50);
+}
+.topnav{
+    overflow: hidden;
+}
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+      }
+      .topnav a {
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 27px;
+      }
+.animate{
+    margin: 40px;
+    height: fit-content;
+    color: rgb(185, 11, 11);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(237, 20, 5);
+    border-radius: 10px;
+    position: relative;
+    font-size: 12pxpx;
+    font-family: Verdana;
+    text-align: center;
+    padding: 31px;
+}
+.fg{
+    
+
+
+}
+
+.asq:hover{
+
+    transform:scale(1.05)  ;
+   transition: transform .2s .2s;
+  
+   }
+   .hay:hover{
+
+    transform:scale(1.05)  ;
+   transition: transform .2s .2s;
+  
+   }
+   .qwa:hover{
+
+    transform:scale(1.05)  ;
+   transition: transform .2s .2s;
+  
+   }
+.maa{
+    cursor: pointer;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.asq{
+    cursor: pointer;
+
+    background-image: url(https://t3.ftcdn.net/jpg/05/92/22/18/360_F_592221846_7FKq0dvmqk6UAp5OciKaNxLB19SH0xV9.jpg);
+    background-position: center center;
+    background-size: cover;
+    border: 0px;
+    height: 170px;
+    margin: 20px;
+    width: 250px;
+    background-color: lightgray;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: width 2s ease 0s, height 2s ease 0s, transform 2s ease 0s;
+}
+.image1{
+
+}
+.ra{
+    cursor: pointer;
+    height: 219px;
+    margin: -15px;
+    padding: 62px;
+    display: flex;
+    justify-content: space-between;
+}
+.hay{
+    cursor: pointer;
+
+    font-weight: 200px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 400;
+    background-image: url(https://media.istockphoto.com/id/1394204936/photo/blood-donation-concept-give-blood-save-up-to-three-lives.jpg?s=612x612&w=0&k=20&c=3QcVENMH9DUltoyE7g5Yqrt47drFwuwt0QU8XNAxi_I=);
+    background-position: center center;
+    background-size: cover;
+    border: 0px;
+    height: 170px;
+    margin: 15px;
+    width: 250px;
+    background-color: lightgray;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: width 2s ease 0s, height 2s ease 0s, transform 2s ease 0s;
+}
+.qwa{
+    cursor: pointer;
+    background-image: url(https://img.freepik.com/free-photo/doctor-man-consulting-patient-while-filling-up-application-form-desk-hospital_1150-12965.jpg);
+    background-position: center center;
+    background-size: cover;
+    border: 0px;
+    height: 170px;
+    margin: 20px;
+    width: 250px;
+    background-color: lightgray;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: width 2s ease 0s, height 2s ease 0s, transform 2s ease 0s;
+}
+.asw:hover{
+    transform:scale(1.05)  ;
+    transition: transform .2s .2s;   
+}
+.asw{
+    cursor: pointer;
+
+    background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-simple-and-unpaid-blood-donation-poster-design-picture-image_1046480.jpg);
+    background-position: center center;
+    background-size: cover;
+    border: 0px;
+    height: 170px;
+    margin: 20px;
+    width: 250px;
+    background-color: lightgray;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: width 2s ease 0s, height 2s ease 0s, transform 2s ease 0s;
+}
+.list1{
+    font-size:20px ;
+}
+.as{
+    font-size: 20px;
+}
+.home{
+    font-size: 61px;
+    padding: 73px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}.h6{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin-left: 72px;
+    /* margin: 67px; */
+    margin-right: 57px;
+
+}
+body{
+    overflow-x: hidden;
+}
+.list{
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    background-color: transparent;
+}
+.but{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+background-color: #ee6f34; 
+color: white;
+border: none;
+width: 100%;
+
+}
+.te{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    display: flex ;
+}
+.a{
+    
+        border: 4px solid red;
+        margin: 31px;
+        font-size: 20px;
+        border-radius: 32px;
+        padding: 40px;
+        width: 412px;
+        height: 397px;
+        width: 50%;
+    }
+
+.b{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100px;
+    float: left;
+    
+        border: 4px solid red;
+        margin: 31px;
+        font-size: 20px;
+        border-radius: 32px;
+        padding: 40px;
+        width: 412px;
+        height: 397px;
+        width: 50%;
+    }
+    .open-button{
+        background-color: #73a187;
+        color: white;
+        padding: 20px 3px;
+        border: none;
+        cursor: pointer;
+        opacity: .9;
+        position: fixed;
+        bottom: 16px;
+        border-radius: 44px;
+        right: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-size: medium;
+        width: 216px;
+    }
+    .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+      }
+      .form-container{
+        max-width: 300px;
+        padding: 10px;
+        background-color: #7bffce;
+        border: 1px solid black;
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.24 );
+        border-radius: 30px;
+      }
+      .chat-popup {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;}
+        .form-container .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+        .form-container .cancel {
+            background-color: red;
+        }
+        
+element.style {
+}
+.form-container textarea {
+    width: 100%;
+    padding: 0px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+    resize: none;
+    min-height: 200px;
+}
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #E3F2FD;
+}
+.chatbot-toggler {
+    z-index: 1;
+    position: fixed;
+    bottom: 37px;
+    right: 53px;
+    outline: none;
+    border: none;
+    height: 79px;
+    width: 145px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 64px;
+    background: #0000005e;
+    transition: all 0.2s ease;
+}
+body.show-chatbot .chatbot-toggler {
+  transform: rotate(90deg);
+}
+.chatbot-toggler span {
+  color: #fff;
+  position: absolute;
+}
+.chatbot-toggler span:last-child,
+body.show-chatbot .chatbot-toggler span:first-child  {
+  opacity: 0;
+}
+body.show-chatbot .chatbot-toggler span:last-child {
+  opacity: 1;
+}
+.chatbot {
+  position: fixed;
+  right: 35px;
+  bottom: 90px;
+  width: 420px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.5);
+  transform-origin: bottom right;
+  box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+              0 32px 64px -48px rgba(0,0,0,0.5);
+  transition: all 0.1s ease;
+}
+body.show-chatbot .chatbot {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+.chatbot header {
+  padding: 16px 0;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: #724ae8;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.chatbot header span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  display: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+header h2 {
+  font-size: 1.4rem;
+}
+.chatbot .chatbox {
+  overflow-y: auto;
+  height: 510px;
+  padding: 30px 20px 100px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+  width: 6px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 25px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+.chatbox .chat {
+  display: flex;
+  list-style: none;
+}
+.chatbox .outgoing {
+  margin: 20px 0;
+  justify-content: flex-end;
+}
+.chatbox .incoming span {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  cursor: default;
+  text-align: center;
+  line-height: 32px;
+  align-self: flex-end;
+  background: #724ae8;
+  border-radius: 4px;
+  margin: 0 10px 7px 0;
+}
+.chatbox .chat p {
+  white-space: pre-wrap;
+  padding: 12px 16px;
+  border-radius: 10px 10px 0 10px;
+  max-width: 75%;
+  color: #fff;
+  font-size: 0.95rem;
+  background: #724ae8;
+}
+.chatbox .incoming p {
+  border-radius: 10px 10px 10px 0;
+}
+.chatbox .chat p.error {
+  color: #721c24;
+  background: #f8d7da;
+}
+.chatbox .incoming p {
+  color: #000;
+  background: #f2f2f2;
+}
+.chatbot .chat-input {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 3px 20px;
+  border-top: 1px solid #ddd;
+}
+.chat-input textarea {
+  height: 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  max-height: 180px;
+  padding: 15px 15px 15px 0;
+  font-size: 0.95rem;
+}
+.chat-input span {
+  align-self: flex-end;
+  color: #724ae8;
+  cursor: pointer;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  font-size: 1.35rem;
+}
+.chat-input textarea:valid ~ span {
+  visibility: visible;
+}
+
+@media (max-width: 490px) {
+  .chatbot-toggler {
+    right: 20px;
+    bottom: 20px;
+  }
+  .chatbot {
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    border-radius: 0;
+    width: 100%;
+  }
+  .chatbot .chatbox {
+    height: 90%;
+    padding: 25px 15px 100px;
+  }
+  .chatbot .chat-input {
+    padding: 5px 15px;
+  }
+  .chatbot header span {
+    display: block;
+  }
+}

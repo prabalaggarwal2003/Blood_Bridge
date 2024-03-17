@@ -1,0 +1,457 @@
+
+
+.image{
+    background-image: url("https://onespiritblog.com/wp-content/uploads/2020/04/Blood-Drive-scaled.jpg");
+    /* background-size: 1550px 729px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 729px;
+}
+/* #blood{
+  height: 30px;
+  width: 30px;
+} */
+input:hover{
+    border: 2px solid red;
+}
+body{
+    margin: 0px;
+}
+
+.login{
+    margin-top: 50px;
+    border: 2px solid red;
+    background-color: rgb(255, 106, 106);
+    height: 60px;
+    width: 200px;
+border-radius: 15px;
+font-size: 20px;
+color: red;
+font-weight: 400;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login:hover{
+  background-color: red;
+    border: 2px solid red;
+    transition: 0.3s;
+    color: white;
+}
+.login:not(:hover){
+  border: 2px solid red;
+    background-color: rgb(255, 106, 106);
+  transition: 0.3s;
+  color: white;
+}
+.don{
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.but{
+  text-decoration: none;
+  color: white;
+}
+#show{
+    border: 2px solid red;
+    background-color: rgb(255, 106, 106);
+    height: 70px;
+    width: 250px;
+margin-left: 200px;
+margin-top: 30px;
+border-radius: 15px;
+font-size: 25px;
+font-weight: 600;
+color: red;
+}
+#hide{
+    border: 2px solid red;
+    background-color: rgb(255, 106, 106);
+    height: 30px;
+    width: 30px;
+}
+#hide:hover{
+    background-color: red;
+    border: 2px solid red;
+    transition: 0.3s;
+}
+#show:hover{
+    background-color: red;
+    border: 2px solid red;
+    transition: 0.3s;
+    color: white;
+}
+#show:not(:hover){
+  border: 2px solid red;
+    background-color: rgb(255, 106, 106);
+  transition: 0.3s;
+}
+#hide:not(:hover){
+  border: 2px solid red;
+    background-color: rgb(255, 106, 106);
+  transition: 0.3s;
+}
+#d{
+    width: 1000px;
+    height: 300px;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    text-align: center;
+    top: 180px;
+}
+
+.all{
+    display: flex;
+
+}
+.one{
+float: left;
+width: 30%;
+box-sizing: border-box;
+
+} 
+
+.two{
+    float: left;
+    width: 40%;
+    
+box-sizing: border-box;
+
+} 
+.three{
+    float: left;
+    width: 40%;
+   
+box-sizing: border-box;
+
+}
+
+
+ 
+  dialog[open] {
+    opacity: 1;
+    pointer-events: auto;
+    animation: slidein 0.5s forwards;
+  }
+  /* dialog.close[open] {
+    opacity: 0;
+    pointer-events: auto;
+    animation: slideout 0.5s backwards;
+  } */
+  /* @keyframes slideout {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }  */
+  
+  @keyframes slidein {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+ li{
+    float: left;
+    margin: 10px;
+    font-size: 22px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline;
+  
+}
+li:hover{
+  color: red;
+  transition: 0.5s;
+}
+li:not(:hover){
+  color: black;
+  transition: 0.5s;
+}
+ul{
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    list-style-type: none;
+  background-color: transparent; 
+  
+}
+#emer{
+  background-color: red;
+  color: black;
+padding: 4px;
+border-radius: 7px;}
+.con{
+  display: inline-block;
+  font-size: 19px;
+  color: black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-top: 150px;
+padding-left: 50px;
+
+}
+#you{
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-underline-position: under;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
+
+}
+#process{
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-underline-position: under;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
+    padding-left: 370px;
+}
+#int{
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-underline-position: under;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
+    padding-left: 160px;
+}
+
+#bod{
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-right: 20px;
+}
+.papa{
+  display: flex;
+}
+.papa2{
+  display: flex;
+}
+.side{
+  float: left;
+  width: 50%;
+  padding-left: 100px;
+  padding-top: 110px;
+}
+.intro{
+  float: right;
+  width: 50%;
+}
+.why{
+  padding-left: 164px;
+  padding-top: 40px;
+  float: left;
+  width: 50%;
+}
+.why2{
+  float: right;
+  width: 50%;
+  padding-top: 40px;
+  padding-left: 300px;
+
+}
+.im{
+  height: 620px;
+  width: 350px;}
+
+
+#pro{
+  height: 300px;
+  width: 1200px;
+  padding-left: 150px;
+}
+.in{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+pre{
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#l{
+  text-decoration: none;
+  color: black;
+}
+#l:hover{
+  color: red;
+  transition: 0.5s;
+}
+/* #l:not(:hover){
+  color: gray;
+  transition: 0.5s;
+} */
+.mySlides {display: none;}
+.imge {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 250px;
+  width: 600px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.papa3{
+  background-color: black;
+height: 300px;
+display: flex;
+}
+.foot1{
+  float: left;
+  width: 25%;
+}
+.foot2{
+  float: left;
+  width: 25%;
+}
+.foot3{
+  float: right;
+  width: 25%;
+}
+.fo{
+  float: right;
+  width: 25%;
+}
+.f{
+  color: gray;
+}
+.h{
+  color: gray;
+}
+#link{
+  text-decoration: none;
+  color: gray;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sidebar a:hover{
+    color: red;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 5px;
+  padding: 5px;
+  
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: red;
+  padding: 0px 10px;
+  border: none;
+}
+/* .openbtn:hover{
+    background-color: rgb(23, 131, 164);
+    transition: 0.5s;
+} */
+.ok{
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-left: 90px;
+}
+.tag{
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 90px;
+
+}

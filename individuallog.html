@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual</title>
+<link rel="stylesheet" href="indilog.css">
+</head>
+<body>
+    <div class="bgimg">
+      <div class="topnav">
+        <nav class="list1">
+       <ul class="list">
+        <li><a href="" class="as">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Blood Compatibility</a></li>
+       
+       
+        </div>
+       </ul>
+        </nav>
+       <div><h1 class="home">Welcome Back,<br> Let's Get Started! </h1></div>
+        <div><h2 class="h6">Be the reason for <br>someone’s heartbeat.</h2></div>
+        
+    </div>
+   
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">Open</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2>Chatbot</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hi there 👋<br>How can I help you today?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+
+    <div class="animate">
+        <h1 style="color: #ff5100; font-size: large;">
+        JOIN US AS A VOLUNTEER AND MAKE A DIFFERENCE
+         </h1>
+        <!-- <img class="sc" src="https://media.istockphoto.com/id/1285301614/photo/young-man-arms-outstretched-by-the-sea-at-sunrise-enjoying-freedom-and-life-people-travel.jpg?s=612x612&w=0&k=20&c=0QW6GnkuFNYcPZhy26XVHuTc2avJTK8u6l_1iT0SlZk=" alt=""> -->
+        <br>  <button type="button" class="fg">MORE INFO</button>
+       </div>
+<div class="cons">
+<button class="but"><h1 class="h2">Doorstep consultation services to determine your eligibility for blood donation.</h1></button></div>
+<h1 class="h3">Eligibility For Blood Donation</h1>    
+<div class="te">
+    <div class="a">
+        <h1>Those who can</h1>
+        1. Generally healthy individuals who meet the minimum age and weight requirements (usually 18-65 years old and at least 110 pounds). <br>
+        2. Those without certain medical conditions or infections that could be transmitted through blood donation, such as HIV, hepatitis, and certain autoimmune disorders. <br>
+        3. Non-pregnant individuals or those who haven't recently given birth or had a miscarriage. <br>
+        4. People who have not recently undergone major surgeries or medical procedures (specific timeframes may vary). <br>
+        5. Individuals with stable blood pressure and hemoglobin levels within the acceptable range. <br>
+        </div>
+   <div class="b">
+    <h1>Those Who cannot</h1><p>
+    1. Individuals with infectious diseases such as HIV/AIDS, hepatitis B or C, malaria, and syphilis. <br>
+    2. Those who have engaged in high-risk behaviors such as intravenous drug use or unprotected sexual activity with multiple partners. <br>
+    3. People who have received a blood transfusion within a certain timeframe (usually within the last 12 months). <br>
+    4. Individuals with certain medical conditions like cancer, heart disease, severe anemia, and certain autoimmune disorders. <br>
+    5. Pregnant or breastfeeding women, as well as those who have recently given birth or had a miscarriage. <br>
+</p></div> 
+</div>
+<div class="image1">
+
+</div>
+<div class="ra">
+    <button class="asq">
+      <h1 id="maa">DONATE</h1>
+    </button> 
+    <button class="asw"><h1 id="maa">REQUIRED</h1></button>
+    <button class="qwa"><h1 id="maa">CONSULT<br><p style="font-size: small;"></p></h1></button>
+    <button class="hay"><h1 id="maa"></h1>VOLUNTEER</button>
+   </div>
+   <div>
+    <p></p>
+   </div>
+
+</div>
+</body>
+<script>const chatbotToggler = document.querySelector(".chatbot-toggler");
+    const closeBtn = document.querySelector(".close-btn");
+    const chatbox = document.querySelector(".chatbox");
+    const chatInput = document.querySelector(".chat-input textarea");
+    const sendChatBtn = document.querySelector(".chat-input span");
+    
+    let userMessage = null; // Variable to store user's message
+    const API_KEY = "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"; // Paste your API key here
+    const inputInitHeight = chatInput.scrollHeight;
+    
+    const createChatLi = (message, className) => {
+        // Create a chat <li> element with passed message and className
+        const chatLi = document.createElement("li");
+        chatLi.classList.add("chat", `${className}`);
+        let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+        chatLi.innerHTML = chatContent;
+        chatLi.querySelector("p").textContent = message;
+        return chatLi; // return chat <li> element
+    }
+    
+    const generateResponse = (chatElement) => {
+        const API_URL = "https://api.openai.com/v1/chat/completions";
+        const messageElement = chatElement.querySelector("p");
+    
+        // Define the properties and message for the API request
+        const requestOptions = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${API_KEY}`
+            },
+            body: JSON.stringify({
+                model: "gpt-3.5-turbo",
+                messages: [{role: "user", content: userMessage}],
+            })
+        }
+    
+        // Send POST request to API, get response and set the reponse as paragraph text
+        fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
+            messageElement.textContent = data.choices[0].message.content.trim();
+        }).catch(() => {
+            messageElement.classList.add("HI");
+            messageElement.textContent = "Hello, how can I help you?";
+        }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
+    }
+    
+    const handleChat = () => {
+        userMessage = chatInput.value.trim(); // Get user entered message and remove extra whitespace
+        if(!userMessage) return;
+    
+        // Clear the input textarea and set its height to default
+        chatInput.value = "";
+        chatInput.style.height = `${inputInitHeight}px`;
+    
+        // Append the user's message to the chatbox
+        chatbox.appendChild(createChatLi(userMessage, "outgoing"));
+        chatbox.scrollTo(0, chatbox.scrollHeight);
+        
+        setTimeout(() => {
+            // Display "Thinking..." message while waiting for the response
+            const incomingChatLi = createChatLi("Thinking...", "incoming");
+            chatbox.appendChild(incomingChatLi);
+            chatbox.scrollTo(0, chatbox.scrollHeight);
+            generateResponse(incomingChatLi);
+        }, 600);
+    }
+    
+    chatInput.addEventListener("input", () => {
+        // Adjust the height of the input textarea based on its content
+        chatInput.style.height = `${inputInitHeight}px`;
+        chatInput.style.height = `${chatInput.scrollHeight}px`;
+    });
+    
+    chatInput.addEventListener("keydown", (e) => {
+        // If Enter key is pressed without Shift key and the window 
+        // width is greater than 800px, handle the chat
+        if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+            e.preventDefault();
+            handleChat();
+        }
+    });
+    
+    sendChatBtn.addEventListener("click", handleChat);
+    closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+    chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+    const apiKey = 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;
+const chatbotEndpoint = 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;
+
+function sendMessageToChatbot(message) {
+  const url = `${chatbotEndpoint}?apiKey=${apiKey}&message=${encodeURIComponent(message)}`;
+
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Handle chatbot response
+      console.log('Chatbot response:', data);
+    })
+    .catch(error => {
+      console.error('Error sending message to chatbot:', error);
+    });
+}
+
+// Example usage:
+sendMessageToChatbot("What's the weather like today?");
+</script>
+</html>
